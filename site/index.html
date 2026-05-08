@@ -49,12 +49,17 @@
   -->
 
   <header class="site-header">
-    <a class="brand" href="#">FirstGen</a>
+    <a class="brand" href="#">
+      <!-- Logo mark from @visual-designer-1 (Ameen). -->
+      <img class="brand-mark" src="assets/logo.png" alt="" onerror="this.style.display='none'" />
+      <span>FirstGen</span>
+    </a>
     <nav>
       <a href="#what">What is it?</a>
       <a href="#numbers">Numbers</a>
-      <a href="#who">Who's it for?</a>
+      <a href="#who">Who it's for</a>
       <a href="#voices">Voices</a>
+      <a href="#help">How it helps</a>
       <a href="#how">Think about</a>
       <a href="#buddy">Meet a buddy</a>
       <a href="#join" class="cta-link">Join</a>
@@ -170,15 +175,21 @@
       On ship-it: if still placeholder, drop the section (and its nav link).
     -->
     <section id="who" class="content-section alt">
-      <h2>Who it's for</h2>
-      <p>
-        FirstGen is for anyone forging a path without a roadmap &mdash; students,
-        early-career professionals, and builders who are the first in their family
-        to do what they&rsquo;re doing. Whether you&rsquo;re breaking into a new
-        industry, learning how work really works, or simply looking for people who
-        get it, FirstGen is here for those who want guidance, community, and
-        confidence as they move forward.
-      </p>
+      <h2>Who its for</h2>
+      <div class="who-grid">
+        <p>
+          FirstGen is for anyone forging a path without a roadmap &mdash; students,
+          early-career professionals, and builders who are the first in their family
+          to do what they&rsquo;re doing. Whether you&rsquo;re breaking into a new
+          industry, learning how work really works, or simply looking for people who
+          get it, FirstGen is here for those who want guidance, community, and
+          confidence as they move forward.
+        </p>
+        <!-- Companion illustration from @visual-designer-1 (Ameen) — placed under "who it's for" as requested. -->
+        <figure class="who-illustration">
+          <img src="assets/who-illustration.png" alt="Illustration of first-generation students together, supporting one another." onerror="this.style.display='none'" />
+        </figure>
+      </div>
     </section>
 
     <!--
@@ -261,6 +272,7 @@
           </ul>
         </li>
       </ul>
+      <p class="how-cta-wrap"><a class="cta" href="#join">See what&rsquo;s possible &rarr;</a></p>
     </section>
 
     <!--
@@ -326,7 +338,7 @@
          submission ("That's is", "this this") fixed under the light-touch rule. -->
     <section id="access" class="access-section">
       <h2>Built with care</h2>
-      <p class="access-statement">FirstGen believes in giving everyone an equal opportunity from all backgrounds. That&rsquo;s why this website uses dyslexia and ADHD friendly font and uses a colour scheme that is friendly for visually impaired people.</p>
+      <p class="access-statement">FirstGen believes in giving everyone an equal opportunity from all backgrounds. That&rsquo;s why this website uses dyslexia and ADHD friendly font and uses a colour scheme that is friendly for visually impaired people. FirstGen believes in empowering all people to achieve their best no matter their disadvantages.</p>
     </section>
 
     <!--
@@ -337,10 +349,14 @@
       reflect the plan they committed.
     -->
     <section id="team" class="team-section">
+      <!-- Team mark illustration submitted by @copywriter-2 (Charlie). -->
+      <figure class="team-mark">
+        <img src="assets/team-mark.png" alt="" onerror="this.style.display='none'" />
+      </figure>
       <h2>Built by</h2>
       <p class="section-lede">Team 2 &mdash; first-in-family students, building this for the next ones in.</p>
       <ul class="team-list">
-        <li>Software Developers &mdash; Ruwei, Kayla</li>
+        <li>Software Developers &mdash; Ruwei, Kayla Cocozza</li>
         <li>Visual Designers &mdash; Ameen, Isaac</li>
         <li>Copywriters &mdash; Yousef, Charlie</li>
         <li>Researcher &mdash; Jeremiah</li>

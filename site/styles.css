@@ -121,6 +121,15 @@ a:hover { text-decoration: underline; }
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--colour-ink);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.brand-mark {
+  display: block;
+  height: 36px;
+  width: auto;
+  border-radius: 8px;
 }
 .site-header nav {
   display: flex;
@@ -339,7 +348,7 @@ footer {
    quote as a warm campus scene. Constrained to the same rail as the
    voice card and given a soft rounded edge to match the card aesthetic. */
 .voices-illustration {
-  max-width: 640px;
+  max-width: 460px;
   margin: var(--gap-l) auto 0;
 }
 .voices-illustration img {
@@ -452,4 +461,73 @@ footer {
   border-radius: var(--radius);
   padding: var(--gap-s) var(--gap-m);
   font-size: 0.9375rem;
+}
+
+/* "Who it's for" — illustration sits beside the copy from @visual-designer-1 (Ameen). */
+.who-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: var(--gap-l);
+  align-items: center;
+}
+.who-illustration { margin: 0; }
+.who-illustration img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+}
+@media (max-width: 768px) {
+  .who-grid { grid-template-columns: 1fr; }
+}
+
+/* "How it helps" — Charlie's three lines paired with Isaac's illustration. */
+.help-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap-l);
+  align-items: center;
+}
+.help-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: var(--gap-m);
+}
+.help-list li {
+  background: var(--colour-paper);
+  border-left: 4px solid var(--colour-warm);
+  padding: var(--gap-m);
+  border-radius: var(--radius);
+  font-size: 1.0625rem;
+  line-height: 1.55;
+}
+.help-illustration { margin: 0; }
+.help-illustration img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+}
+@media (max-width: 768px) {
+  .help-grid { grid-template-columns: 1fr; }
+}
+
+/* Closing CTA under "Things to think about" — Yousef's "See what's possible" button. */
+.how-cta-wrap {
+  margin-top: var(--gap-l);
+  text-align: center;
+}
+
+/* Team mark above the "Built by" credits — illustration from @copywriter-2 (Charlie). */
+.team-mark {
+  margin: 0 auto var(--gap-m);
+  max-width: 220px;
+}
+.team-mark img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
 }
