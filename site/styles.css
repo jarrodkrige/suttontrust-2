@@ -272,6 +272,17 @@ footer {
 }
 .voice-card figcaption { font-size: 0.875rem; color: var(--colour-secondary); }
 
+/* When only one voice has landed, centre it and let the quote breathe
+   instead of stretching to the full grid width. */
+.voice-grid--solo {
+  grid-template-columns: minmax(0, 640px);
+  justify-content: center;
+}
+.voice-grid--solo .voice-card blockquote {
+  font-size: 1.375rem;
+  line-height: 1.35;
+}
+
 /* Meet a buddy */
 .buddy-section {
   max-width: var(--max-width);
