@@ -6,15 +6,22 @@
    ============================================================ */
 
 :root {
-  /* Colour tokens — replace with your team's palette */
-  --colour-ink: #1a1a2e;
-  --colour-paper: #fdfcfb;
-  --colour-warm: #f4a261;
-  --colour-trust: #2a9d8f;
-  --colour-quiet: #e9ecef;
-  --colour-secondary: #555;
-  --colour-muted: #888;
-  --colour-warm-hover: #e08d44;
+  /* Colour tokens — palette from software-developer-2 (Kayla).
+     Soft, friendly, slightly academic core + warm coral for energy. */
+  --colour-ink: #2F2F2F;        /* Charcoal — headlines / strong text */
+  --colour-paper: #FAFAFA;      /* Off White — clean background */
+  --colour-warm: #FF8FA3;       /* Coral Pop — calls-to-action */
+  --colour-warm-hover: #E66B82; /* darker coral, derived */
+  --colour-trust: #2a9d8f;      /* link/stat colour — kept for AA contrast */
+  --colour-quiet: #CDB4DB;      /* Soft Lilac — alt band + soft borders */
+  --colour-secondary: #6B7280;  /* Soft Grey — body secondary */
+  --colour-muted: #6B7280;      /* Soft Grey — fine print */
+
+  /* Accent tokens from Kayla's palette — available for future sections */
+  --colour-blush:  #FFC8DD;     /* warmth, approachability */
+  --colour-sky:    #BDE0FE;     /* trust, openness */
+  --colour-mint:   #A8E6CF;     /* growth, wellbeing */
+  --colour-butter: #FFF3B0;     /* optimism, highlights */
 
   /* Type tokens */
   --font-display: "Georgia", "Times New Roman", serif;
