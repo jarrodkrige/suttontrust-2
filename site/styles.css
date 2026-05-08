@@ -220,6 +220,31 @@ a:hover { text-decoration: underline; }
   border-radius: var(--radius);
 }
 
+/* Richer card variant for @copywriter-1 (Yousef)'s "things to think about"
+   grid — each card carries a heading + a tight bullet list of his prompts. */
+.feature-list--rich {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+.feature-list--rich li { padding: var(--gap-l) var(--gap-m); }
+.feature-list--rich h3 {
+  font-size: 1.1875rem;
+  margin: 0 0 var(--gap-s);
+}
+.feature-list--rich ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  display: grid;
+  gap: 0.5rem;
+}
+.feature-list--rich ul li {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  border-radius: 0;
+  font-size: 0.9875rem;
+  line-height: 1.5;
+}
+
 /* CTA section */
 .cta-section {
   text-align: center;
