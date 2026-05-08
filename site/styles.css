@@ -166,6 +166,16 @@ a:hover { text-decoration: underline; }
 }
 .cta:hover { background: var(--colour-warm-hover); text-decoration: none; }
 
+/* Microcopy under the hero CTA — soft reassurance line from
+   @copywriter-2 (Charlie). Sits close to the button without competing
+   with it visually. */
+.cta-microcopy {
+  margin: var(--gap-s) 0 0;
+  font-size: 0.9375rem;
+  color: var(--colour-secondary);
+}
+.cta-section .cta-microcopy { color: var(--colour-paper); opacity: 0.85; }
+
 /* Content sections */
 .content-section {
   max-width: var(--max-width);
