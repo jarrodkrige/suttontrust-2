@@ -286,6 +286,20 @@ footer {
 }
 .voice-card figcaption { font-size: 0.875rem; color: var(--colour-secondary); }
 
+/* Voices illustration from visual-designer-1 (Ameen) — sits beneath the
+   quote as a warm campus scene. Constrained to the same rail as the
+   voice card and given a soft rounded edge to match the card aesthetic. */
+.voices-illustration {
+  max-width: 640px;
+  margin: var(--gap-l) auto 0;
+}
+.voices-illustration img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+}
+
 /* When only one voice has landed, centre it and let the quote breathe
    instead of stretching to the full grid width. */
 .voice-grid--solo {
