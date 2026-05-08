@@ -23,9 +23,11 @@
   --colour-mint:   #A8E6CF;     /* growth, wellbeing */
   --colour-butter: #FFF3B0;     /* optimism, highlights */
 
-  /* Type tokens */
+  /* Type tokens — body font is Lexend, an a11y-conscious face chosen by
+     accessibility-champion-1 (Abid) to reduce visual stress for dyslexic
+     readers. Falls back gracefully if Google Fonts fails to load. */
   --font-display: "Georgia", "Times New Roman", serif;
-  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-body: "Lexend", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 
   /* Spacing */
   --gap-s: 0.75rem;
@@ -57,7 +59,19 @@ html, body {
   font-family: var(--font-body);
   color: var(--colour-ink);
   background: var(--colour-paper);
-  line-height: 1.55;
+  /* Body rhythm tuned by accessibility-champion-1 (Abid): looser line,
+     letter, and word spacing makes Lexend easier to track for dyslexic
+     and low-vision readers without changing the visual hierarchy. */
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  word-spacing: 0.04em;
+}
+
+/* Headings stay tight — Abid's spacing recipe is for body copy. */
+h1, h2, h3 { letter-spacing: 0; word-spacing: 0; }
+p, li, blockquote, figcaption {
+  letter-spacing: 0.02em;
+  word-spacing: 0.08em;
 }
 
 h1, h2, h3 {
