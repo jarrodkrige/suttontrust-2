@@ -424,6 +424,12 @@ footer {
   padding: var(--gap-xl) var(--gap-l);
   text-align: center;
 }
+/* 18px reading size requested by @accessibility-champion-1 (Abid). */
+.access-section .access-statement {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--colour-ink);
+}
 
 /* Built by (Coordinator) */
 .team-section {
