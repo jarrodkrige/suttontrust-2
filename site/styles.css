@@ -6,16 +6,20 @@
    ============================================================ */
 
 :root {
-  /* Colour tokens — palette from software-developer-2 (Kayla).
-     Soft, friendly, slightly academic core + warm coral for energy. */
-  --colour-ink: #2F2F2F;        /* Charcoal — headlines / strong text */
-  --colour-paper: #FAFAFA;      /* Off White — clean background */
-  --colour-warm: #FF8FA3;       /* Coral Pop — calls-to-action */
+  /* Colour tokens — accessibility palette from accessibility-champion-1
+     (Abid) governs the structural roles (paper, ink, headings, links,
+     focus) for AA contrast. Software-developer-2 (Kayla)'s coral + lilac
+     + accent tints stay as the warm decorative layer. */
+  --colour-ink: #121212;        /* Near-black — primary body text (Abid) */
+  --colour-paper: #FFFFFF;      /* White — clean background (Abid) */
+  --colour-heading: #0B3C5D;    /* Dark navy — headings (Abid) */
+  --colour-warm: #FF8FA3;       /* Coral Pop — primary CTAs (Kayla) */
   --colour-warm-hover: #E66B82; /* darker coral, derived */
-  --colour-trust: #2a9d8f;      /* link/stat colour — kept for AA contrast */
-  --colour-quiet: #CDB4DB;      /* Soft Lilac — alt band + soft borders */
-  --colour-secondary: #6B7280;  /* Soft Grey — body secondary */
-  --colour-muted: #6B7280;      /* Soft Grey — fine print */
+  --colour-trust: #005FCC;      /* Strong blue — links / stat figures (Abid) */
+  --colour-focus: #FFB000;      /* Amber — visible focus outline (Abid) */
+  --colour-quiet: #CDB4DB;      /* Soft Lilac — alt band + soft borders (Kayla) */
+  --colour-secondary: #4A4A4A;  /* Mid grey — body secondary, AA on white */
+  --colour-muted: #595959;      /* Slightly darker grey — fine print, AA on white */
 
   /* Accent tokens from Kayla's palette — available for future sections */
   --colour-blush:  #FFC8DD;     /* warmth, approachability */
@@ -79,6 +83,15 @@ h1, h2, h3 {
   font-weight: 700;
   line-height: 1.15;
   margin: 0 0 var(--gap-m);
+  color: var(--colour-heading);
+}
+
+/* Visible focus outline for keyboard users — amber from Abid's palette,
+   sits proud of any background (white paper, lilac alt, dark navy CTA). */
+:focus-visible {
+  outline: 3px solid var(--colour-focus);
+  outline-offset: 2px;
+  border-radius: 2px;
 }
 
 h1 { font-size: clamp(2.5rem, 5vw, 4rem); }
@@ -214,6 +227,7 @@ a:hover { text-decoration: underline; }
   background: var(--colour-ink);
   color: var(--colour-paper);
 }
+.cta-section h2 { color: var(--colour-paper); }
 .cta-section a { color: var(--colour-paper); }
 
 footer {
