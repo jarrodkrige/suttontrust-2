@@ -350,6 +350,11 @@ footer {
   border: 1px solid var(--colour-quiet);
   border-radius: var(--radius);
   padding: var(--gap-l);
+  margin: 0;
+}
+.buddy-card:has(> .buddy-quote:first-child) {
+  grid-template-columns: 1fr;
+  text-align: left;
 }
 @media (max-width: 600px) {
   .buddy-card { grid-template-columns: 1fr; }
@@ -362,6 +367,16 @@ footer {
 }
 .buddy-bio h3 { font-size: 1.5rem; margin-bottom: 0.25rem; }
 .buddy-meta { color: var(--colour-secondary); margin-bottom: var(--gap-s); font-size: 0.9375rem; }
+.buddy-quote {
+  margin: 0 0 var(--gap-s);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  border-left: 4px solid var(--colour-accent, var(--colour-secondary));
+  padding-left: var(--gap-m);
+  color: var(--colour-ink);
+}
+.buddy-quote p + p { margin-top: var(--gap-s); }
+.buddy-card > .buddy-meta { margin-bottom: 0; }
 
 /* Resources (Researcher) */
 .resource-list {
